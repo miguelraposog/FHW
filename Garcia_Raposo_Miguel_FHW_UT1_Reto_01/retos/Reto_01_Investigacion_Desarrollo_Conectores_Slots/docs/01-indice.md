@@ -4,7 +4,7 @@
 2. [Índice](01-indice.md)  
 3. [Introducción](02-introduccion.md)  
 4. Conectores internos (energía) — [`10-conectores_internos/`](10-conectores_internos/README.md)  
-   - Fichas: [plantilla](10-conectores_internos/fichas/Molex.md), [ejemplo ATX 24p](10-conectores_internos/fichas/atx_24p.md)
+   - Fichas: [plantilla](10-conectores_internos/fichas/06_Molex.md), [ejemplo ATX 24p](10-conectores_internos/fichas/01_atx_24p.md)
 5. Conectores de datos — [`11-conectores_datos/`](11-conectores_datos/README.md)  
    - Fichas: [plantilla](11-conectores_datos/fichas/plantilla_ficha.md), [ejemplo SATA](11-conectores_datos/fichas/ejemplo_sata.md)
 6. Slots de expansión — [`12-slots_expansion/`](12-slots_expansion/README.md)  
