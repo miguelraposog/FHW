@@ -15,11 +15,11 @@ compatibilidad con las placas adaptadoras.
 
 ## Identificación física
 
-- Forma plana y delgada con la muesca en forma de "L", de color negro con los cables de color amarillo, rojo, naranja y negro. Ubicada en la parte trasera de discos duros, SSD o unidades ópticas
+- Conector de 8 pines divisble en uno de 6 y otro de 2, color negro y se conecta en el lateral de la GPU
 
 ## Notas técnicas
 
-- Corriente continua de entregando energía eléctrica de +3.3 V, +5 V y +12 V.
+- Valor normalizado del cable: 20 AWG
  
 ## Fotos
 
