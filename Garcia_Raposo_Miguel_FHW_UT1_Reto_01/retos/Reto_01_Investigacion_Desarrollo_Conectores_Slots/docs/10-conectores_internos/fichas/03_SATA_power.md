@@ -2,7 +2,7 @@
 
 **Descripción breve:** Este cable de alimentación permite convertir la interfaz de las fuentes de alimentación ATX comunes al formato SATA para suministrar energía a las unidades SATA.
 
-**Pines/Carriles/Voltajes/Velocidad:** 15 pines / 3,3 V / 5 V / 12 V
+**Pines/Carriles/Voltajes/Velocidad:** 15 pines / 3 / +3.3 V, +5 V, +12 V DC / NO
 
 **Uso principal:** Proveer energía eléctrica a dispositivos de almacenamiento SATA.
 

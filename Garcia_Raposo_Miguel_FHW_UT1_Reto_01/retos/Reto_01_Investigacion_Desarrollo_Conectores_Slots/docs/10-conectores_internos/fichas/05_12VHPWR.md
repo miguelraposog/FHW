@@ -2,7 +2,7 @@
 
 **Descripción breve:** Cable para tarjetas gráficas con el conector 12VHPWR 600 W para alimentarlas.
 
-**Pines/Carriles/Voltajes/Velocidad:** 16 pines (12 de potencia y 4 de señal) / 1 (12V) / 12V DC / No
+**Pines/Carriles/Voltajes/Velocidad:** 16 pines (12 de potencia y 4 de señal) / 1  / +12V DC / No
 
 **Uso principal:** Alimentación de graficas de alto consumo de series 40 en superior que requieren una potencia de 600W.
 

@@ -1,13 +1,11 @@
-# PCIe de 6 pines a 8 pines (6+2)
+# PCIe de 8 pines (6+2)
 
 **Descripción breve:**  Se puede utilizar para la
 alimentación de tarjetas PCIe con interfaz de 6 u 8 pines y es el más
 adecuado para aplicaciones de minería de datos, debido a su
 compatibilidad con las placas adaptadoras.
 
-**Pines/Carriles/Voltajes/Velocidad:** 
-- 6 pines  / 12 V 
-- 8 pines (6+2) / 12 V 
+**Pines/Carriles/Voltajes/Velocidad:** 8 pines (6+2) / 1 / +12V CD / NO
 
 **Uso principal:** Alimentar a las GPU.
 
@@ -23,7 +21,7 @@ compatibilidad con las placas adaptadoras.
  
 ## Fotos
 
-![PCIe 6-8p](../../../assets/img/10-conectores_internos/PCIe6-8_04.jpg)
+![PCIe 8p](../../../assets/img/10-conectores_internos/PCIe6-8_04.jpg)
 
 ## Fuente
 - https://www.delock.de/produkt/83004/pdf.html?sprache=es

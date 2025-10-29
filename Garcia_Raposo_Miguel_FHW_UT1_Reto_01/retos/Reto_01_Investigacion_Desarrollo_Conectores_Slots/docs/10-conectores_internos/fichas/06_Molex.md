@@ -1,18 +1,24 @@
-# <Tipo y nombre>
+# Molex 
 
-**Descripción breve:** <2–3 líneas>
-**Pines/Carriles/Voltajes/Velocidad:** <datos clave>
-**Uso principal:** <texto>
-**Compatibilidad actual:** Alta | Media | Baja
+**Descripción breve:** Este conector daba servicio a muchos componentes del PC, especialmente a los discos duros, DVD/CD-ROM, tarjetas de expansión, etc. Podíamos encontrarlos por todos lados, pero ahora ha sido sustituido por el conector SATA, principalmente.
+
+**Pines/Carriles/Voltajes/Velocidad:** 4 pines / 2  / +5V, +12V DC / No
+
+**Uso principal:** Suministración de energía a dispositivos periféricos como discos duros, unidades ópticas e incluso ventiladores internos.
+
+**Compatibilidad actual:**  Baja
 
 ## Identificación física
 
-- <forma/llaves(muescas o ranuras)/colores/símbolos/ubicación>
+- Pieza rectangular y fina de color blanca con 4 pines y cables de colores amarillo, negro y rojo.
 
 ## Notas técnicas
 
-- <versiones, limitaciones, requisitos de cable, PD/Hz/GT/s…>
+- Potencia máxima de 132W.
 
 ## Fotos
 
-![<alt>](../../../assets/img/10-conectores_internos/ ""</span><span class="vditor-ir__marker vditor-ir__marker--paren">)</span><img src="../../../assets/img/10-conectores_internos/<tu-imagen>.jpg" /></span></p><h2 data-block="0" class="vditor-ir__node" id="ir-Fuentes" data-marker="#"><span class="vditor-ir__marker vditor-ir__marker--heading" data-type="heading-marker">## </span>Fuentes</h2><ul data-tight="true" data-marker="-" data-block="0"><li data-marker="-"><div data-block="0" data-type="html-block" class="vditor-ir__node"><pre class="vditor-ir__marker--pre vditor-ir__marker"><code data-type="html-block"><enlaces oficiales></code></pre><pre class="vditor-ir__preview" data-render="2"><enlaces oficiales=""></pre></div></li></ul>
+![PCIe 6-8p](../../../assets/img/10-conectores_internos/Molex_06.jpg)
+
+## Fuente
+- https://www.profesionalreview.com/2019/12/31/conector-molex-todo-lo-que-necesitas-saber

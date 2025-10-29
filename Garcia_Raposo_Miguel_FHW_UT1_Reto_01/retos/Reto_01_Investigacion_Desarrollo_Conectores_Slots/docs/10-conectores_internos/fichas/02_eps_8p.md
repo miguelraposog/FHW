@@ -2,7 +2,7 @@
 
 **Descripción breve:** Se puede utilizar para la alimentación de una placa base con interfaz EPS de 4 u 8 pines.
 
-**Pines/Carriles/Voltajes/Velocidad:** 8 pines / 3,3 V / 5 V / 12 V
+**Pines/Carriles/Voltajes/Velocidad:** 8 pines / 1 / +12 V DC / NO
 
 **Uso principal:** Alimentación de una placa base con interfaz EPS
 
