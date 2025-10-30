@@ -1,5 +1,5 @@
 
-# Conector de datos: SATA (Serial ATA)
+# SATA (Serial ATA)
 
 **Descripción breve:** Interfaz de datos en serie para conectar HDD/SSD/unidades ópticas.  
 
