@@ -17,7 +17,7 @@
 
 ## Fotos
 
-![PCIe 6-8p](../../../assets/img/10-conectores_internos/12VHPWR_05.jpg)
+![12VHPWR](../../../assets/img/10-conectores_internos/12VHPWR_05.jpg)
 
 ## Fuente
 - https://seasonic.com/es/12vhpwr-cable

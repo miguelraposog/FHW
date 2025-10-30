@@ -18,7 +18,7 @@
 
 ## Fotos
 
-![PCIe 6-8p](../../../assets/img/10-conectores_internos/Molex_06.jpg)
+![Molex](../../../assets/img/10-conectores_internos/Molex_06.jpg)
 
 ## Fuente
 - https://www.profesionalreview.com/2019/12/31/conector-molex-todo-lo-que-necesitas-saber
