@@ -1,5 +1,5 @@
 
-# Conector externo: USB-C (USB4/PD)
+# USB-C (USB4/PD)
 
 **Descripción breve:** Conector reversible para datos, vídeo y alimentación (PD).  
 
@@ -19,4 +19,4 @@
 ![USB-C](../../../assets/img/20-conectores_externos/USB-C_31.jpg "USB-C")
 
 ## Fuentes
-- https://docs.rs-online.com/30df/A700000012408418.pdf
+- https://www.avast.com/es-es/c-thunderbolt-vs-usb-c
