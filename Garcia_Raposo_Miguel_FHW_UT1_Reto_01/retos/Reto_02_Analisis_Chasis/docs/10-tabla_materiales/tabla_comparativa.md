@@ -1,4 +1,4 @@
-# Plantilla — Tabla comparativa de materiales de chasis
+# Tabla comparativa de materiales de chasis
 
 > Completa **5 filas**: Acero SECC, Aluminio, Plástico, Vidrio templado, Materiales compuestos.
 
