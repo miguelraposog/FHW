@@ -1,3 +1,6 @@
 # Reflexión personal
 
-(≥100 palabras)
+En mi opinión, el chasis es un componente del PC decisivo para el funcionamiento óptimo del ordenador. Al fin y al cabo, este es el que soporta todos los componentes y el que permite la buena refrigeracíon y protección de estos. Para la experiencia del usuario, es importante que el ordenador haga el menor ruido posible y es gracias a la buena elección de materiales de la torre que llegamos a conseguir esto, por ejemplo, si no hubiera buenos aislantes, podríamos recibir corriente nosotros mismos o que hibiera interferencia entre los componentes; también, sin la elección adecuada de materiales podría el ordenador podría producir demasidas vibraciones por el movimiento de los ventiladores.    
+Para que los componentes puedan rendir al máximo es importante tener en cuenta su temperatura, por ellos es importante conseguir un flujo de aire positivo para la optima reflrigeración. Entonces se necesita suficiente espacio para ventiladores y radiadores, sin olvidar la presencia de filtros para intentar llenar el interior del PC lo menos posible de polvo.
+Además, es importante que nuestra caja tenga los suficientes puertos actualizados para poder trabajar ya que sin estos o con puertos muy antiguos relentizaríamos el trbajo exponencialmente.    
+Por último, a todos nos interesa que nuestra caja se vea lo más bonita posible y en eso también influyen los materiales ya que estos son el acabado final.

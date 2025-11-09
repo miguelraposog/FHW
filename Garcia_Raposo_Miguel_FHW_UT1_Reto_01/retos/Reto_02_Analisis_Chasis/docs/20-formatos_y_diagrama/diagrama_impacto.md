@@ -5,12 +5,6 @@
 ## Diagrama 
 ![Comparativa de formatos](../../assets/img/Comparaciones_torres.jpg "Dimensiones aproximadas y bahías")
 
-> Sugerencias para el diagrama:
-> - Alto × Ancho × Fondo (aprox.)
-> - Posición de HDD/SSD
-> - Ranuras PCIe disponibles
-> - Flujo de aire (flechas)
-> - Ubicación de ventiladores/radiadores
 
 ## Impacto del tamaño
 - **Capacidad de componentes:** 
