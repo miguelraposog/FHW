@@ -11,7 +11,8 @@
 
 ## 1) Introducción (5–10 líneas)
 
-Breve resumen del vídeo y de lo que vas a hacer en esta parte.
+En el video es una recomendación de que tarjetas gráficas comprar en Black Friday según diferentes presupuestos, como 200€, 350€, 500€, 600€, 800€ y acaba dando su opinión sobre las GPU RTX 5080 y RTX 5090.
+En este apartado voy a comparar las gráficas mencionadas en el video cuando era Black Friday con la actualidad que ya ha pasado esa fecha. Trataré con las GPUs de alrededor de los 350€ y el tramo de 600-800€. Finiquitaré con una pequeña comparación entre AMD y Nvidia en cuanto a calidad-precio.
 
 ## 2) Tramos del vídeo y modelos mencionados
 
