@@ -9,5 +9,5 @@
 
 ## PVP objetivo
 - Media precios comparables: 35 €  
-- Margen de competitividad: 0 %  
-- **PVP objetivo:** 35 €
+- Margen de competitividad: 15 %  
+- **PVP objetivo:** 60 €
