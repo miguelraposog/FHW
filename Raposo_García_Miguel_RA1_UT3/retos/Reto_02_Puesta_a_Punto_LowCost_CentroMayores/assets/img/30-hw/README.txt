@@ -1,0 +1,1 @@
+Guarda aquí tus capturas. Incluye URL completa y fecha/hora.
