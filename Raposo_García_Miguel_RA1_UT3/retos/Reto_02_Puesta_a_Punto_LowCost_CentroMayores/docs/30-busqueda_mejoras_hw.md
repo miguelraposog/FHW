@@ -11,45 +11,42 @@ Busca en **tiendas online españolas** (PcComponentes, Amazon ES, Coolmod, Walla
 - **Mantenimiento:** pasta térmica económica, filtros de polvo, tornillería o caddy(**adaptador/bandeja (caddy) para montar una unidad de almacenamiento** en un hueco del PC).
 - **Otros (si procede):** adaptador Wi-Fi USB de bajo coste, altavoz barato si no hay sonido, etc.
 
-**Tabla por categoría (ejemplo SSD):**
+### Almacenamiento (SSD 2.5" SATA)
 
 | Categoría | Marca/Modelo | Capacidad | Precio (€) | Tienda | URL | Captura |
-|---|---|---:|---|---|---|
-| SSD | KingDian S280 | 120 GB | 14,99 | Amazon ES | https://... | img/ssd01.png |
-| SSD | Goodram CX400 | 128 GB | 16,90 | PcComponentes | https://... | img/ssd02.png |
+|---|---|---|---|---|---|---|
+| SSD | Hikvision Digital | 120 GB | 22,55 | Amazon ES | https://www.amazon.es/Hikvision-Digital-Technology-HS-SSD-C100-120G/dp/B07F9PXTBG/ref=sr_1_4?adgrpid=52058013090&dib=eyJ2IjoiMSJ9.SpPkr6SgtSE4prOx3EPHqBzOhkIFxXvx8N6JiRGIhp9RokH2X8eec9cX3BbEPGBvukD1efU0RM8CCqpfmJWIA9uIzoG1YDmE8r_m0oEgmlNE4dSsWOo5Qs03b0FX7D9AaJrLooCF3Z5zP5n8ZJm9_MevDddenufRf7XNb3Xh0iDTT39omrFhDF0sCZUdanSiRiuAMpsfmI3cwzBCLrksNNucALJk5D4kaBUt16BR4N-Gs6I0D9khlzgVywAIy4Mv-RoCpHQEkrhe3PinAWMe3-6A2LLHZ7ewajv14FHT5MA.7H1D1fS4qnqt61lyfWopJmJmQ10CIvf7cqE4Pbzb56E&dib_tag=se&hvadid=601314682948&hvdev=c&hvexpln=0&hvlocphy=9208723&hvnetw=g&hvocijid=13356261423045380000--&hvqmt=b&hvrand=13356261423045380000&hvtargid=kwd-506959462530&hydadcr=23167_2231449&keywords=ssd%2Bsata%2B2.5%2B120gb&mcid=d7ae5352a32039af98060879ffe380f9&qid=1770576254&sr=8-4&th=1| ![SSD1](../assets/img/30-hw/SSD1.png) |
+| SSD | Silicon Power | 128 GB | 29,99 | Amazon ES | https://www.amazon.es/Silicon-Power-GB-SSD-Performance-Interna/dp/B07KR25Q72/ref=sr_1_11?adgrpid=52058013090&dib=eyJ2IjoiMSJ9.SpPkr6SgtSE4prOx3EPHqBzOhkIFxXvx8N6JiRGIhp9RokH2X8eec9cX3BbEPGBvukD1efU0RM8CCqpfmJWIA9uIzoG1YDmE8r_m0oEgmlNE4dSsWOo5Qs03b0FX7D9AaJrLooCF3Z5zP5n8ZJm9_MevDddenufRf7XNb3Xh0iDTT39omrFhDF0sCZUdanSiRiuAMpsfmI3cwzBCLrksNNucALJk5D4kaBUt16BR4N-Gs6I0D9khlzgVywAIy4Mv-RoCpHQEkrhe3PinAWMe3-6A2LLHZ7ewajv14FHT5MA.7H1D1fS4qnqt61lyfWopJmJmQ10CIvf7cqE4Pbzb56E&dib_tag=se&hvadid=601314682948&hvdev=c&hvexpln=0&hvlocphy=9208723&hvnetw=g&hvocijid=13356261423045380000--&hvqmt=b&hvrand=13356261423045380000&hvtargid=kwd-506959462530&hydadcr=23167_2231449&keywords=ssd%2Bsata%2B2.5%2B120gb&mcid=d7ae5352a32039af98060879ffe380f9&qid=1770576426&sr=8-11&th=1 | ![SSD2](../assets/img/30-hw/SSD2.png) |
 
-> Guarda capturas en `../assets/img/30-hw/` con **URL completa** visible y **fecha/hora**.
+### Mantenimiento y pasta térmica
 
-## 2) Compatibilidad técnica (justifica con datos)
+| Categoría     | Marca/Modelo                  | Contenido | Precio (€) | Tienda        | URL                                             | Captura             |
+|---------------|-------------------------------|-----------:|-----------:|---------------|-------------------------------------------------|---------------------|
+| Pasta térmica | Temperst Zero II              | 1 g        | 1,98       | PcComponentes | https://www.pccomponentes.com/tempest-zero-ii-pasta-termica-1g-62w-mk     |  ![Tempest](../assets/img/30-hw/pasta1.png)|
+| Pasta térmica | Arctic MX-4 4 g               | 4 g        | 7,09       | PcComponentes | https://www.pccomponentes.com/arctic-mx-4-pasta-termica-4-gramos     |  ![Artic](../assets/img/30-hw/pasta2.png)|
+
+
+## 2) Compatibilidad técnica
 
 Para **cada pieza** elegida, justifica la **compatibilidad** con tu lote:
 
-- **RAM:** tipo (DDR2/DDR3), voltaje (1.5 V/1.35 V), frecuencia soportada por la placa/CPU, **slots libres**.
-- **SSD:** interfaz **SATA**, formato **2.5"**, bahías/adaptadores disponibles.
-- **Otros:** puertos USB necesarios, espacio físico en chasis.
-
-> Incluye captura de **fuente oficial** (manual/hoja técnica de la placa o del fabricante de la pieza) donde se vea el dato clave (ej.: “hasta 8 GB DDR2-1600”).
+- **SSD:**  Están en formato 2.5" y utilizan **interfaz SATA III retrocompatible con SATA II**, por lo que se pueden utilizar en bahías libres o con adaptador de 2.5" a 3.5". Las placas estándar de sobremesa con puertos SATA admiten sin problema estos SSD.
+- **Pasta térmica:** Es compatible con **cualquier disipador y CPU de sobremesa estándar**, aplicándose entre el procesador y su disipador para mejorar transferencia de calor y disminuir temperaturas.
 
 ## 3) Mini‑estimación de impacto (sentido común + referencias)
 
-En 3–5 líneas por categoría, explica el **impacto esperado**:
+- **SSD 120 GB:** Cambiar el HDD por un SSD es como asfaltar una carretera de tierra: los datos viajan mucho más rápido. El PC no tendrá más "potencia bruta", pero todo el tráfico de información (abrir Chrome, arrancar Windows) volará.
 
-- **De HDD a SSD:** arranques/aperturas más rápidas (órdenes de magnitud).
-- **De 4 GB a 8 GB RAM:** menos paginación, mejor multitarea ligera.
-- **Pasta térmica/limpieza:** menos temperatura/ruido → estabilidad.
+- **Mantenimiento:** Funciona como el cambio de aceite en un coche. No hace que el motor corra más, pero evita que se queme y asegura que el viaje sea suave y sin ruidos molestos.
 
-> **No** se piden benchmarks. Usa criterio y referencias de fuentes fiables.
+## 4) Escenario elegido y desglose de gasto
 
-## 4) Escenario elegido y desglose de gasto (S0/S1/S2)
-
-Completa la tabla con tu **propuesta final** y calcula el **gasto HW** total (sin mano de obra):
+Se elige el Escenario S2 (Upgrade ligero). Aunque el objetivo ideal era el S1, el precio de mercado actual de los SSDs nuevos disponibles (aprox. 22 €) y la necesidad de mantenimiento térmico sitúan la inversión por encima de los 15 €, pero cumpliendo holgadamente el tope de 30 €.
 
 
-| Escenario    | Pieza          | Precio (€) | Unidades | Subtotal (€) | Nota                         |
-| -------------- | ---------------- | ------------: | ---------: | --------------: | ------------------------------ |
-| S1           | SSD 120 GB     |       15,00 |        1 |         15,00 | 2ª mano o oferta            |
-| S1           | Pasta térmica |        2,00 |        1 |          2,00 | tubo compartido entre varios |
-|              |                |             |          |               |                              |
-| **Total HW** |                |             |          |        **…** |                              |
-
-Luego traslada el **Total HW** a `75-plan_presupuesto_hw_y_roi.md` para calcular costes y ROI.
+| Escenario    | Pieza                      | Precio (€) | Unidades | Subtotal (€) | Nota                            |
+| :------------- | :--------------------------- | :-----------: | :--------: | :-------------: | :-------------------------------- |
+| **S2**       | SSD Hikvision Digital 120GB       |    22,55    |    1    |     22,55     | Opción más económica listada           |
+| **S2**       | Pasta térmica Tempest (1g) |    1,98    |    1    |     1,98     | Monodosis (coste completo)      |
+|              |                            |             |         |               |                                 |
+| **Total HW** | **Coste por Unidad**       |             |         | **24,53 €** | **Objetivo cumplido (≤ 30€)** |
