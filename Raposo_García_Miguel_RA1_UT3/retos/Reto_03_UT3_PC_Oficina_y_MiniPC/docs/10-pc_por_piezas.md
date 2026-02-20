@@ -244,8 +244,7 @@ Esta opción es perfecta ya que con los 450W va sobrado para lo que gastan los o
 - Justifica si priorizas precio, consumo o posibilidad de ampliación.
 - Incluye una mini tabla resumen.
 
-Plantilla sugerida:
-
+He priorizado el precio principalmente y hay posibilidad de ampliación en la RAM para ponerle un modulo más y así ampliarlo hasta los 16GB.
 
 | Componente | Modelo | Precio (€) | URL tienda |
 | ------------ | -------- | ------------: | ------------ |
