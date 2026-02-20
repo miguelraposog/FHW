@@ -58,7 +58,7 @@ https://www.pccomponentes.com/mini-pc-beelink-mini-s12-intel-n95-8gb-256gb-ssd?s
 
 | Aspecto | Opción A (por piezas) | Opción B (Mini PC) |
 |---|---|---|
-| Precio total | 451,94€ | 269,00€ |
+| Precio total | 433,89€ | 269,00€ |
 | Rendimiento esperado (oficina) | Excelente, buena potencia y permite multitarea y mucha fluidez en Office | Suficiente, ideal para realizar una solo tarea, en multitarea muy lento |
 | Ampliación (RAM/SSD) | SI | SI |
 | Consumo/ruido/espacio | ~150W / ruido leve por ventiladores / Mini Tower(medio) | ~15W / silencioso / muy poco espacio, posibilidad de colocarlo en el anclaje VESA tras monitor |

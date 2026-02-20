@@ -14,7 +14,7 @@ Rellena con ✅ + enlaces de evidencia.
 | Compatibilidad                                      | Evidencia (enlace) | OK |
 | ----------------------------------------------------- | -------------------- | :--: |
 | CPU ↔ Placa base (socket/chipset soportado)        |  https://www.intel.la/content/www/xl/es/products/sku/134584/intel-core-i312100-processor-12m-cache-up-to-4-30-ghz/specifications.html / https://es.msi.com/Motherboard/PRO-H610M-G-DDR4/Overview                 | ✅ |
-| RAM ↔ Placa base (DDR4/DDR5, velocidad soportada)  |  https://es.msi.com/Motherboard/PRO-H610M-G-DDR4/Overview /  https://www.kingston.com/es/memory/gaming/kingston-fury-beast-ddr4-memory                 | ✅ |
+| RAM ↔ Placa base (DDR4/DDR5, velocidad soportada)  |  https://es.msi.com/Motherboard/PRO-H610M-G-DDR4/Overview /  https://www.goodram.com/es/productos/irdm-pro-ddr4-deep-black/                 | ✅ |
 | SSD ↔ Placa base (SATA o M.2; NVMe vs SATA)        |  https://content.ekatalog.biz/katalog/20505071/P310P240GM28.pdf / https://es.msi.com/Motherboard/PRO-H610M-G-DDR4/Overview                  | ✅ |
 | PSU ↔ Placa base (24-pin ATX, EPS 8-pin si aplica) |  https://es.msi.com/Motherboard/PRO-H610M-G-DDR4/Overview / https://www.gigabyte.com/es/Power-Supply/GP-P450B                  | ✅ |
 | Chasis ↔ Placa base (ATX/mATX/ITX)                 | https://es.msi.com/Motherboard/PRO-H610M-G-DDR4/Overview / https://www.nox-xtreme.com/cajas/coolbay-mx2                   | ✅ |

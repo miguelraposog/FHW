@@ -31,9 +31,10 @@
 - Processor Base Power (W): 65
 
 **Justificación (oficina):**
-  Este procesador Intel es la mejor opción para oficina gracias a que intel ofrece un potente rendimiento mononúcleo, además muchos de los programas usados en utilizan uno o dos núcleos pensando que este procesador ofrece 4 núcleos es mucho más que suficiente. Además gracias a los gráficos integrados se podrán agilizar tareas como la decodificación de video o simplemente agilizar Windows. Por último, en cuanto a su relación calidad precio, esta es excelente gracias a su gran precio, además en comparación con el equivalente de AMD, saldría más caro.
+Este procesador Intel es la mejor opción para oficina gracias a que intel ofrece un potente rendimiento mononúcleo, además muchos de los programas usados en utilizan uno o dos núcleos pensando que este procesador ofrece 4 núcleos es mucho más que suficiente. Además gracias a los gráficos integrados se podrán agilizar tareas como la decodificación de video o simplemente agilizar Windows. Por último, en cuanto a su relación calidad precio, esta es excelente gracias a su gran precio.
 
-  **Compatibilidad (obligatorio, con enlaces):**
+**Compatibilidad (obligatorio, con enlaces):**
+
 - Compatibilidad clave 1:  Socket compatible, LGA 1700
   - Evidencia (URL):  https://www.intel.la/content/www/xl/es/products/sku/134584/intel-core-i312100-processor-12m-cache-up-to-4-30-ghz/specifications.html
 - Compatibilidad clave 2:  Máxima velocidad de memoria (MT/s): DDR5 4800 DDR4 3200
@@ -63,7 +64,7 @@
 - Memoria
   - Tipos de memoria compatibles: DDR4-SDRAM
   - Número de ranuras de memoria: 2
-  - Velocidades máxima: 3200 MHz
+  - Velocidad máxima: 3200 MHz
   - Memoria interna máxima: 64 GB
 - Reguladores del almacenaje
   - Interfaces de disco de almacenamiento soportados: M.2,SATA III
@@ -102,31 +103,31 @@ Esta es una gran opción gracias a su bajo precio, al ser el modelo DDR4, nos pe
 
 ## PASO 3 — Memoria RAM (mínimo 8 GB)
 
-**Componente elegido:** Kingston FURY Beast DDR4
+**Componente elegido:** Goodram IRDM Pro DDR4 3600MHz 8GB CL18
 
-- **Marca y modelo:**  Kingston FURY Beast DDR4
+- **Marca y modelo:**  Goodram IRDM Pro DDR4
 - **Precio (€):** 82,95€
-- **URL tienda:**  https://www.pccomponentes.com/kingston-fury-beast-ddr4-3200-mhz-8gb-cl16?s_kwcid=AL!14405!3!!!!x!!&gad_source=1&gad_campaignid=21435331652&gclid=Cj0KCQiAhtvMBhDBARIsAL26pjH3EwKyVZ2YQeca5Ibj3l_wEQb9d2wNvVLLiB565FF-pcLNcnTVTJAaAoTYEALw_wcB
+- **URL tienda:**  https://www.pccomponentes.com/goodram-irdm-pro-ddr4-3600mhz-8gb-cl18
 
 **Ficha técnica oficial (obligatorio):**
 
-- URL oficial (fabricante/estándar):  https://www.kingston.com/es/memory/gaming/kingston-fury-beast-ddr4-memory
+- URL oficial (fabricante/estándar):  https://www.goodram.com/es/productos/irdm-pro-ddr4-deep-black/
 
 **Características principales (resumen):**
 
 - Capacidad 8 GB
-- Frecuencia(s) memoria DDR4 3200 MHz
+- Frecuencia(s) memoria DDR4 3600 MHz
 - Número de módulos de memoria 1
-- CAS Latency 16
+- CAS Latency 18
 
 **Justificación (oficina):**
-Está es muy buena opción ya que se aprovecha al máximo la velocidad que soporta la placa base, es decir, los 3200MHz de la DDR4. También  se elige por su baja latencia CL16. Por último, al ser solo una de 8GB se puede ampliar a futuro si fuera necesario ya que aún queda otro zócalo vacio.
+Está es muy buena opción ya que se aprovecha al máximo la velocidad que soporta la placa base, aunque hay algo de cuello de botella. También se elige por su baja latencia CL18. Por último, al ser solo una de 8GB se puede ampliar a futuro si fuera necesario ya que aún queda otro zócalo vacio.
 **Compatibilidad (obligatorio, con enlaces):**
 
 - Compatibilidad clave 1 : DDR4
-  - Evidencia (URL):  https://www.kingston.com/es/memory/gaming/kingston-fury-beast-ddr4-memory
-- Compatibilidad clave 2:  Frecuencia de 3200 MHz
-  - Evidencia (URL):  https://www.kingston.com/es/memory/gaming/kingston-fury-beast-ddr4-memory
+  - Evidencia (URL):  https://www.goodram.com/es/productos/irdm-pro-ddr4-deep-black/
+- Compatibilidad clave 2:  Frecuencia de 3600 MHz
+  - Evidencia (URL):  https://www.goodram.com/es/productos/irdm-pro-ddr4-deep-black/
 
 **Captura (opcional si tu profe lo exige):**
 ![RAM](../assets/img/10-pc_por_partes/RAM.png)
@@ -244,14 +245,15 @@ Esta opción es perfecta ya que con los 450W va sobrado para lo que gastan los o
 - Justifica si priorizas precio, consumo o posibilidad de ampliación.
 - Incluye una mini tabla resumen.
 
-He priorizado el precio principalmente y hay posibilidad de ampliación en la RAM para ponerle un modulo más y así ampliarlo hasta los 16GB.
+He priorizado el precio principalmente y hay posibilidad de ampliación en la RAM para ponerle un modulo más y así ampliarlo hasta los 16GB o incluirle alguna tarjeta de expansión.
 
-| Componente | Modelo | Precio (€) | URL tienda |
-| ------------ | -------- | ------------: | ------------ |
-| CPU        |  Intel Core i3-12100 3.3 GHz      |   158,99   |  https://www.pccomponentes.com/intel-core-i3-12100-33-ghz?srsltid=AfmBOoqvCjgVM_VrjN1GQjCJnp3KAUmAot8CDU8VY7G_ablPrVmNkWir          |
-| Placa base | MSI PRO H610M-G DDR4       |    73,99         |  https://www.pccomponentes.com/msi-pro-h610m-g-ddr4?s_kwcid=AL!14405!3!!!!x!!&gad_source=1&gad_campaignid=22157318807&gclid=Cj0KCQiAhtvMBhDBARIsAL26pjH_d2AtYqhedEdlw12-XIibXHVSjS_T_MbXMjtM2hFdqKZlIHUjcGgaAobbEALw_wcB          |
-| RAM        | Kingston FURY Beast DDR4       |   82,95          |  https://www.pccomponentes.com/kingston-fury-beast-ddr4-3200-mhz-8gb-cl16?s_kwcid=AL!14405!3!!!!x!!&gad_source=1&gad_campaignid=21435331652&gclid=Cj0KCQiAhtvMBhDBARIsAL26pjH3EwKyVZ2YQeca5Ibj3l_wEQb9d2wNvVLLiB565FF-pcLNcnTVTJAaAoTYEALw_wcB          |
-| SSD        |   Patriot P310 M.2 PCIe Gen 3 x4 240GB SSD     |    56,99         |    https://www.amazon.es/Patriot-P310-PCIe-240GB-Consumo/dp/B09KY7PMCS/ref=asc_df_B09KY7PMCS?mcid=0461745d23c33311bdaad47c81063f0c&tag=googshopes-21&linkCode=df0&hvadid=699858699962&hvpos=&hvnetw=g&hvrand=6036154613346416529&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9208723&hvtargid=pla-1667599466084&hvocijid=6036154613346416529-B09KY7PMCS-&hvexpln=0&th=1        |
-| PSU        |  Gigabyte P450B 450W 80 Plus Bronze      |   51,03          |     https://www.pccomponentes.com/gigabyte-p450b-450w-80-plus-bronze       |
-| Chasis     |   Nox Coolbay MX2     |        27,99      |    https://www.pccomponentes.com/nox-coolbay-mx2-usb-30-negro?_gl=1*1105x1i*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiAqeDMBhDcARIsAJEbU9RIQRLdAlEGO17VBMbi37a5EqyKNalC8uMHr4nucxA46Va_NpDacCsaAvuuEALw_wcB        |
-| **TOTAL**  |        |      **451,94** |            |
+
+| Componente | Modelo                                   | Precio (€) | URL tienda                                                                                                                                                                                                                                                                                                                                                                           |
+| ------------ | ------------------------------------------ | ------------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| CPU        | Intel Core i3-12100 3.3 GHz              |      158,99 | https://www.pccomponentes.com/intel-core-i3-12100-33-ghz?srsltid=AfmBOoqvCjgVM_VrjN1GQjCJnp3KAUmAot8CDU8VY7G_ablPrVmNkWir                                                                                                                                                                                                                                                            |
+| Placa base | MSI PRO H610M-G DDR4                     |       73,99 | https://www.pccomponentes.com/msi-pro-h610m-g-ddr4?s_kwcid=AL!14405!3!!!!x!!&gad_source=1&gad_campaignid=22157318807&gclid=Cj0KCQiAhtvMBhDBARIsAL26pjH_d2AtYqhedEdlw12-XIibXHVSjS_T_MbXMjtM2hFdqKZlIHUjcGgaAobbEALw_wcB                                                                                                                                                              |
+| RAM        | Goodram IRDM Pro DDR4                    |       64,90 | https://www.pccomponentes.com/goodram-irdm-pro-ddr4-3600mhz-8gb-cl18                                                                                                                                                                                                                                                                                                                 |
+| SSD        | Patriot P310 M.2 PCIe Gen 3 x4 240GB SSD |       56,99 | https://www.amazon.es/Patriot-P310-PCIe-240GB-Consumo/dp/B09KY7PMCS/ref=asc_df_B09KY7PMCS?mcid=0461745d23c33311bdaad47c81063f0c&tag=googshopes-21&linkCode=df0&hvadid=699858699962&hvpos=&hvnetw=g&hvrand=6036154613346416529&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9208723&hvtargid=pla-1667599466084&hvocijid=6036154613346416529-B09KY7PMCS-&hvexpln=0&th=1 |
+| PSU        | Gigabyte P450B 450W 80 Plus Bronze       |       51,03 | https://www.pccomponentes.com/gigabyte-p450b-450w-80-plus-bronze                                                                                                                                                                                                                                                                                                                     |
+| Chasis     | Nox Coolbay MX2                          |       27,99 | https://www.pccomponentes.com/nox-coolbay-mx2-usb-30-negro?_gl=1*1105x1i*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiAqeDMBhDcARIsAJEbU9RIQRLdAlEGO17VBMbi37a5EqyKNalC8uMHr4nucxA46Va_NpDacCsaAvuuEALw_wcB                                                                                                                                                                                        |
+| **TOTAL**  |                                          |  **433,89** |                                                                                                                                                                                                                                                                                                                                                                                      |
