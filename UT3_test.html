@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulacro Examen Hardware - 1º ASIR</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0ebf8;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            border-top: 10px solid #673ab7; /* Color estilo Google Forms */
+        }
+        .header {
+            padding: 30px;
+            border-bottom: 1px solid #eee;
+        }
+        .header h1 {
+            margin: 0;
+            color: #202124;
+            font-size: 24px;
+        }
+        .header p {
+            color: #5f6368;
+            margin-top: 10px;
+        }
+        .question-block {
+            padding: 25px;
+            border-bottom: 1px solid #f1f3f4;
+            transition: background-color 0.3s;
+        }
+        .question-block:hover {
+            background-color: #fafafa;
+        }
+        .question-text {
+            font-weight: 500;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .option-label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid transparent;
+        }
+        .option-label:hover {
+            background-color: #f5f5f5;
+        }
+        input[type="radio"] {
+            margin-right: 12px;
+            transform: scale(1.2);
+            accent-color: #673ab7;
+        }
+        
+        /* Estilos de corrección */
+        .correct-answer {
+            background-color: #e6f4ea !important;
+            border: 1px solid #34a853 !important;
+            color: #137333;
+            font-weight: bold;
+        }
+        .wrong-answer {
+            background-color: #fce8e6 !important;
+            border: 1px solid #ea4335 !important;
+            color: #c5221f;
+        }
+        .feedback {
+            margin-top: 10px;
+            font-size: 14px;
+            font-style: italic;
+            display: none;
+        }
+        
+        .footer {
+            padding: 30px;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        button {
+            background-color: #673ab7;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background-color: #532c92;
+        }
+        #score-display {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #202124;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Examen Fundamentos de Hardware (1º ASIR)</h1>
+        <p>Selecciona la respuesta correcta. Al final podrás ver tu puntuación y las correcciones.</p>
+    </div>
+
+    <form id="quiz-form">
+        <div id="quiz-container">
+            </div>
+        
+        <div class="footer">
+            <button type="button" onclick="checkAnswers()">Enviar respuestas</button>
+            <div id="score-display"></div>
+            <button type="button" onclick="location.reload()" style="display:none; margin-top:15px; background-color:#5f6368;" id="retry-btn">Intentar de nuevo</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    // Base de datos de preguntas
+    const quizData = [
+        {
+            q: "1. Al elegir una solución de protección eléctrica para equipos críticos del taller, ¿cuál se considera la medida más adecuada?",
+            options: [
+                "Usar regletas básicas de supermercado y desconectar manualmente.",
+                "Usar regletas con protección contra sobretensiones y SAI de onda pura, revisando baterías cada 12-24 meses.",
+                "Confiar exclusivamente en el diferencial del cuadro eléctrico general.",
+                "Instalar estabilizadores de tensión analógicos antiguos."
+            ],
+            correct: 1
+        },
+        {
+            q: "2. ¿Cuál es el procedimiento recomendado para la gestión de baterías de litio?",
+            options: [
+                "Apilarlas en estanterías ventiladas.",
+                "Almacenar en contenedores ignífugos señalizados y entregar a gestores autorizados sin perforar ni doblar.",
+                "Desecharlas en basura orgánica si no están hinchadas.",
+                "Guardarlas en cajas de cartón cerradas."
+            ],
+            correct: 1
+        },
+        {
+            q: "3. Ante una fuente ATX bajo sospecha de fallo interno grave, ¿qué actuación es la más segura?",
+            options: [
+                "Abrir la carcasa para descargar los condensadores manualmente.",
+                "Evitar manipular el interior y sustituir el conjunto por una unidad certificada.",
+                "Puentear el conector verde y negro para forzar encendido y medir voltajes.",
+                "Limpiar el interior con agua jabonosa."
+            ],
+            correct: 1
+        },
+        {
+            q: "4. Para una gestión profesional de equipos de clientes (trazabilidad y datos), ¿qué práctica es preferible?",
+            options: [
+                "Anotar el nombre con rotulador permanente en la carcasa.",
+                "Etiquetar con nº de orden/estado, usar cifrado en pruebas y documentar copias/accesos.",
+                "Dejar los equipos abiertos y encendidos en zonas de paso.",
+                "Usar la misma contraseña genérica para todos los equipos."
+            ],
+            correct: 1
+        },
+        {
+            q: "5. Antes de atornillar la placa base al chasis, ¿qué acción es fundamental?",
+            options: [
+                "Aplicar pasta térmica en la parte trasera de la placa.",
+                "Instalar la máscara trasera I/O y comprobar que los espaciadores coinciden con los orificios.",
+                "Conectar todos los cables de la fuente para tensarlos.",
+                "Retirar los disipadores del chipset para aligerar peso."
+            ],
+            correct: 1
+        },
+        {
+            q: "6. ¿Cuál es la función principal de los espaciadores metálicos?",
+            options: [
+                "Puntos de apoyo estéticos.",
+                "Mantener la placa separada del chasis evitando cortocircuitos.",
+                "Actuar como aislantes térmicos.",
+                "Permitir la vibración de la placa base."
+            ],
+            correct: 1
+        },
+        {
+            q: "7. Al sacar la placa base, ¿qué práctica es correcta con la bolsa antiestática?",
+            options: [
+                "Usar el exterior de la bolsa como alfombrilla de montaje.",
+                "Retirar la placa y colocarla sobre una superficie ESD, evitando apoyarla sobre la bolsa.",
+                "Frotar la bolsa contra la placa para cargarla estáticamente.",
+                "Recortar trozos para usarlos de arandelas aislantes."
+            ],
+            correct: 1
+        },
+        {
+            q: "8. ¿Qué diferencia clave distingue un socket LGA frente a un PGA?",
+            options: [
+                "Los pines están en el disipador.",
+                "En LGA los pines están en la placa base; en PGA van integrados en el procesador.",
+                "En LGA los pines están en la fuente de alimentación.",
+                "No hay diferencia física, solo de software."
+            ],
+            correct: 1
+        },
+        {
+            q: "9. En un socket ZIF, ¿cómo se debe insertar el procesador?",
+            options: [
+                "Presionar con fuerza en el centro hasta oír un clic.",
+                "Dejar asentar por gravedad alineando la muesca y usar solo la palanca para fijarlo.",
+                "Forzar un giro para marcar los contactos.",
+                "Introducir primero un lateral haciendo palanca con un destornillador."
+            ],
+            correct: 1
+        },
+        {
+            q: "10. Al instalar el disipador de serie, ¿cuál es el paso correcto?",
+            options: [
+                "Presionar anclajes en cruz y conectar el cable al conector CPU_FAN.",
+                "Fijar solo dos anclajes y conectar a cualquier cabezal de ventilador.",
+                "Apretar todo al máximo y dejar el cable desconectado.",
+                "Sujetarlo con el panel lateral de la caja."
+            ],
+            correct: 0
+        },
+        {
+            q: "11. Para activar el Doble Canal (Dual Channel) con dos módulos en una placa de 4 slots:",
+            options: [
+                "Instalar en zócalos adyacentes (juntos).",
+                "Seguir el manual usando zócalos del mismo canal (generalmente color alterno).",
+                "Colocar uno y dejar el otro en la caja de repuesto.",
+                "Llenar los cuatro zócalos con módulos de distintas marcas."
+            ],
+            correct: 1
+        },
+        {
+            q: "12. Si instalas RAM con frecuencias distintas pero compatibles:",
+            options: [
+                "Todas funcionan a la frecuencia más alta.",
+                "Los módulos lentos se deshabilitan automáticamente.",
+                "El conjunto opera a la velocidad del módulo más lento.",
+                "La placa base se bloquea y no arranca."
+            ],
+            correct: 2
+        },
+        {
+            q: "13. Tras un primer arranque estable, ¿qué hacer para aprovechar el rendimiento de la RAM?",
+            options: [
+                "Reducir la frecuencia manualmente.",
+                "Activar perfil XMP o EXPO en BIOS y pasar test de memoria.",
+                "Subir voltaje aleatoriamente.",
+                "Cambiar la posición física en cada reinicio."
+            ],
+            correct: 1
+        },
+        {
+            q: "14. Diferencia principal entre SSD SATA 2.5\" y NVMe M.2:",
+            options: [
+                "Solo varía el tamaño físico, la velocidad es idéntica.",
+                "El SATA usa cables y bahía; el NVMe M.2 se fija a la placa y usa bus PCIe.",
+                "El NVMe usa cables SATA adicionales.",
+                "El SATA requiere ranura PCIe directa."
+            ],
+            correct: 1
+        },
+        {
+            q: "15. ¿Qué cuidado posterior requiere un SSD NVMe M.2?",
+            options: [
+                "Comprobar temperatura bajo carga y usar disipador/thermal pad si es necesario.",
+                "Forzar cargas sin monitoreo térmico.",
+                "Retirar el disipador para contacto directo con aire.",
+                "Ubicarlo bajo la GPU para compartir calor."
+            ],
+            correct: 0
+        },
+        {
+            q: "16. ¿Qué función clave tiene un write blocker en análisis forense?",
+            options: [
+                "Aumentar velocidad de lectura.",
+                "Impedir físicamente que el sistema operativo escriba en el disco al leerlo.",
+                "Clonar automáticamente todos los discos conectados.",
+                "Cifrar el disco en tiempo real."
+            ],
+            correct: 1
+        },
+        {
+            q: "17. Orientación del ventilador de la fuente en caja con filtro inferior:",
+            options: [
+                "Hacia el interior del chasis.",
+                "Hacia abajo, tomando aire del exterior (circuito independiente).",
+                "Apuntando a la tapa de vidrio lateral.",
+                "Bloqueado con espuma aislante."
+            ],
+            correct: 1
+        },
+        {
+            q: "18. Práctica recomendada para el cableado interior:",
+            options: [
+                "Guiar cables por pasacables traseros y usar bridas dejando espacio despejado.",
+                "Dejar cables sueltos para cambios rápidos.",
+                "Enrollar cables sobre el disipador de la CPU.",
+                "Meter todos los cables en bahías de discos vacías."
+            ],
+            correct: 0
+        },
+        {
+            q: "19. Sobre la polaridad del panel frontal (F_PANEL):",
+            options: [
+                "Botones Power/Reset tienen polaridad estricta.",
+                "Los LED (HDD/Pwr) requieren respetar polaridad; los interruptores no.",
+                "El audio debe invertirse.",
+                "Los USB frontales requieren soldadura."
+            ],
+            correct: 1
+        },
+        {
+            q: "20. Conexión de ventiladores adicionales de caja:",
+            options: [
+                "Conectar todos al conector CPU_FAN.",
+                "Usar conectores CHA_FAN/SYS_FAN y reservar CPU_FAN para el disipador.",
+                "Usar solo conexiones Molex directas a la fuente.",
+                "Conectar al cabezal de la bomba de agua."
+            ],
+            correct: 1
+        },
+        {
+            q: "21. Recomendación para conectar GPU moderna con cable 12V-2x6:",
+            options: [
+                "Doblar en ángulo cerrado justo a la salida.",
+                "Usar cable nativo certificado y evitar dobleces bruscas cerca del conector.",
+                "Usar adaptadores genéricos mezclados.",
+                "Apoyar peso de la tarjeta sobre el cable."
+            ],
+            correct: 1
+        },
+        {
+            q: "22. Mensaje 'Reboot and Select proper Boot device':",
+            options: [
+                "Fallo grave de placa base.",
+                "Hardware supera POST, pero BIOS no encuentra dispositivo de arranque/SO.",
+                "Fuente sin potencia suficiente.",
+                "RAM defectuosa."
+            ],
+            correct: 1
+        },
+        {
+            q: "23. Ajuste BIOS para instalar SO desde pendrive:",
+            options: [
+                "Configurar prioridad de arranque para que el USB (UEFI) aparezca primero.",
+                "Desactivar puertos USB.",
+                "Habilitar solo arranque Legacy.",
+                "Poner unidad óptica primero (aunque no haya)."
+            ],
+            correct: 0
+        },
+        {
+            q: "24. Información típica en 'Hardware Monitoring Status' de BIOS:",
+            options: [
+                "Orden de arranque del sistema.",
+                "Voltajes principales, temperatura de CPU y velocidad de ventiladores.",
+                "Asignación de interrupciones IRQ.",
+                "Contraseñas de usuario."
+            ],
+            correct: 1
+        },
+        {
+            q: "25. Primera prueba de encendido tras montaje:",
+            options: [
+                "Cerrar paneles y mirar monitor inmediatamente.",
+                "Arrancar con caja abierta y verificar visualmente el giro de ventiladores.",
+                "Apagar pantalla y escuchar el disco duro.",
+                "Tapar rejillas para escuchar ruidos de la fuente."
+            ],
+            correct: 1
+        },
+        {
+            q: "26. Pruebas de conectividad básica tras montaje:",
+            options: [
+                "Probar solo teclado.",
+                "Verificar que tarjetas, puertos USB de caja, audio y unidades responden.",
+                "No probar nada hasta que el cliente se queje.",
+                "Probar solo gráfica con benchmark pesado."
+            ],
+            correct: 1
+        },
+        {
+            q: "27. Estrategia ante pantallazos azules (BSOD) aleatorios:",
+            options: [
+                "Una pasada rápida de test de Windows.",
+                "Lanzar herramientas como MemTest86 con varias pasadas completas.",
+                "Sustituir toda la RAM preventivamente sin probar.",
+                "Usar Linux Live sin testear memoria."
+            ],
+            correct: 1
+        },
+        {
+            q: "28. Ventaja de fuente de laboratorio con limitador de corriente:",
+            options: [
+                "Quemar el componente defectuoso rápidamente.",
+                "Permitir fijar un límite de corriente y observar consumo/calor sin más daños.",
+                "No necesita medir tensión.",
+                "Garantizar arranque forzoso."
+            ],
+            correct: 1
+        },
+        {
+            q: "29. Si falla el comando 'ping 127.0.0.1':",
+            options: [
+                "La pila de red local o tarjeta están deshabilitadas/mal configuradas.",
+                "El router está apagado.",
+                "Los servidores DNS están caídos.",
+                "Corte del proveedor de Internet."
+            ],
+            correct: 0
+        },
+        {
+            q: "30. Ping al router funciona, pero ping a 'google.com' falla:",
+            options: [
+                "Cable Ethernet roto.",
+                "Tarjeta de red deshabilitada.",
+                "Problema de DNS o falta de salida a Internet (Gateway).",
+                "Loopback corrupto."
+            ],
+            correct: 2
+        },
+        {
+            q: "31. Comandos Linux para ver IP y Puerta de Enlace:",
+            options: [
+                "ifconfig + ping",
+                "ip a (para IPs) + netstat -r (para rutas/gateway).",
+                "ipconfig /all + tracert",
+                "resolvectl + dig"
+            ],
+            correct: 1
+        },
+        {
+            q: "32. Característica del multímetro para seguir pistas cortadas:",
+            options: [
+                "Solo voltaje alterna.",
+                "Modo pitido de continuidad y puntas finas.",
+                "Escala alta de corriente.",
+                "Medición de frecuencia."
+            ],
+            correct: 1
+        },
+        {
+            q: "33. Uso correcto del tubo termorretráctil:",
+            options: [
+                "Cortar ajustado, colocar antes del empalme y calentar con aire.",
+                "Usar solo cinta aislante.",
+                "Calentar con la punta del soldador directamente.",
+                "Quemar con mechero hasta oscurecer."
+            ],
+            correct: 0
+        },
+        {
+            q: "34. Recurso para evitar perder tornillos de portátil:",
+            options: [
+                "Vaso de plástico único.",
+                "Montones en la mesa sin marcar.",
+                "Recipientes o alfombrillas magnéticas etiquetadas por zonas.",
+                "Caja común mezclada."
+            ],
+            correct: 2
+        }
+    ];
+
+    function renderQuiz() {
+        const container = document.getElementById('quiz-container');
+        let html = '';
+        
+        quizData.forEach((item, index) => {
+            html += `
+                <div class="question-block" id="q${index}">
+                    <div class="question-text">${item.q}</div>
+                    <div class="options">
+            `;
+            
+            item.options.forEach((opt, optIndex) => {
+                html += `
+                    <label class="option-label" id="label-${index}-${optIndex}">
+                        <input type="radio" name="q${index}" value="${optIndex}">
+                        ${opt}
+                    </label>
+                `;
+            });
+            
+            html += `
+                    </div>
+                    <div class="feedback" id="feedback-${index}"></div>
+                </div>
+            `;
+        });
+        
+        container.innerHTML = html;
+    }
+
+    function checkAnswers() {
+        let score = 0;
+        const total = quizData.length;
+        
+        quizData.forEach((item, index) => {
+            const selected = document.querySelector(`input[name="q${index}"]:checked`);
+            const feedback = document.getElementById(`feedback-${index}`);
+            
+            // Deshabilitar inputs
+            const inputs = document.querySelectorAll(`input[name="q${index}"]`);
+            inputs.forEach(inp => inp.disabled = true);
+            
+            if (selected) {
+                const val = parseInt(selected.value);
+                const labelSelected = document.getElementById(`label-${index}-${val}`);
+                
+                if (val === item.correct) {
+                    score++;
+                    labelSelected.classList.add('correct-answer');
+                    feedback.style.display = 'block';
+                    feedback.style.color = 'green';
+                    feedback.innerText = "¡Correcto!";
+                } else {
+                    labelSelected.classList.add('wrong-answer');
+                    const labelCorrect = document.getElementById(`label-${index}-${item.correct}`);
+                    labelCorrect.classList.add('correct-answer');
+                    feedback.style.display = 'block';
+                    feedback.style.color = 'red';
+                    feedback.innerText = "Incorrecto. La respuesta correcta está marcada en verde.";
+                }
+            } else {
+                // Si no contestó
+                const labelCorrect = document.getElementById(`label-${index}-${item.correct}`);
+                labelCorrect.classList.add('correct-answer');
+                feedback.style.display = 'block';
+                feedback.style.color = 'orange';
+                feedback.innerText = "No contestada.";
+            }
+        });
+        
+        const scoreDisplay = document.getElementById('score-display');
+        scoreDisplay.innerHTML = `Tu puntuación: ${score} de ${total}`;
+        document.querySelector('button[onclick="checkAnswers()"]').style.display = 'none';
+        document.getElementById('retry-btn').style.display = 'inline-block';
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    // Iniciar
+    renderQuiz();
+</script>
+
+</body>
+</html>
