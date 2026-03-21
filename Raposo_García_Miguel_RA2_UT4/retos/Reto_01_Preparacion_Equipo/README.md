@@ -1,48 +1,32 @@
-# Reto 01 — Práctica de Taller: UT3 Ensamblado de Equipos (RA1)
+## Objetivo Principal
+Actuar como un **técnico informático** para preparar, desde cero, un ordenador de oficina virtualizado con **Windows**. El equipo debe quedar listo, seguro y optimizado para un entorno de trabajo basado principalmente en el ecosistema de **Google** (Drive, Docs, Gmail, etc.).
 
-**Duración estimada en taller:** 35 minutos  
-**Flujo de trabajo:** taller (toma de fotos y datos) → investigación en línea → consolidado → **PDF único**.
+## Ejercicio 1: Máquina Virtual y SO (2 puntos)
 
-## Objetivos
-- Identificar físicamente los componentes internos de un sistema informático.
-- Extraer información técnica del serigrafiado/etiquetas.
-- Investigar compatibilidad y disponibilidad de recambios en el mercado actual.
+- Crear una **máquina virtual** (VirtualBox, VMware, etc.).
+- Asignar **hardware virtual** (RAM, CPU, disco) de forma coherente y justificada.
+- Instalar Windows y crear al menos **dos usuarios**: un Administrador y uno Estándar.
 
-## Normas de seguridad (OBLIGATORIAS)
-1. Desconecta el cable de alimentación de la toma de corriente.
-2. Descarga electricidad estática tocando el chasis metálico o con pulsera antiestática.
-3. No fuerces ningún componente (no desmontar salvo indicación del profesor).
-4. Cuidado con aristas metálicas del chasis (riesgo de corte).
+## Ejercicio 2: Preparación y Software (3 puntos)
 
-## Estructura esperada
-```
-Proyecto_RA1_UT3/
-└─ retos/
-   └─ Reto_01_Practica_Taller_Ensamblado/
-      ├─ README.md
-      ├─ docs/
-      │  ├─ 00-portada.md
-      │  ├─ 01-indice.md
-      │  ├─ 02-instrucciones.md
-      │  ├─ 10-toma_de_datos/
-      │  │  └─ plantilla_tabla_taller.md
-      │  ├─ 20-investigacion_tecnica/
-      │  │  └─ plantilla_investigacion.md
-      │  ├─ 30-mercado_y_recambios/
-      │  │  └─ plantilla_recambios.md
-      │  ├─ 40-observaciones/
-      │  │  └─ plantilla_observaciones.md
-      │  ├─ 90-ENTREGA_UNICA.md
-      │  └─ 99-entrega_y_checklist.md
-      ├─ assets/
-      │  └─ img/
-      │     ├─ 10-toma_de_datos/
-      │     └─ 30-mercado_y_recambios/
-      └─ rubric/
-         └─ Notas_de_evaluacion.md
-```
+- Instalar **programas** para: navegación web, acceso a Google, visor PDF, descompresión de archivos y utilidades de oficina.
+- Requisito clave: **No hay software impuesto**, pero debes justificar cada elección (nombre, función, motivo de elección y ventajas).
 
-## Entrega
-- Consolida TODO en `docs/90-ENTREGA_UNICA.md` y **exporta un único PDF** con el nombre:  
-  `apellido1_apellido2_nombre_FHW_UT3_Retro_01.pdf`  *(sin ñ ni tildes)*.
-- Sube el **PDF único** a la plataforma. En comentarios, puedes incluir el enlace a tu repo.
+## Ejercicio 3: Seguridad y Pruebas (2,5 puntos)
+
+- Instalar un **antivirus/antimalware** gratuito y actualizar Windows.
+- Usar **herramientas de diagnóstico/monitorización** del sistema.
+- Realizar **pruebas de funcionamiento**: Demostrar que se puede entrar a Gmail, abrir un PDF, descomprimir un archivo y que el antivirus funciona.
+- **Registrar las incidencias** que surjan y explicar cómo las has solucionado.
+
+## Ejercicio 4: Documentación en GitHub (2,5 puntos)
+
+- Crear un **repositorio** público que documente todo el proceso como un técnico profesional.
+- El **README.md** debe incluir: entorno virtual, instalación, lista de software justificada, pruebas, incidencias y una conclusión final sobre el estado del equipo y posibles mejoras.
+
+### Qué debes entregar
+**URL del repositorio de GitHub**: Debe ser público y se dejará en la caja de comentarios de la plataforma de entrega.
+
+### Un único archivo PDF:
+**Debe contener**: Portada con tus datos, breve introducción, el enlace al repositorio de GitHub, un resumen de las decisiones clave y capturas de pantalla.
+**Nomenclatura estricta**: apellido1_apellido2_nombre_TareaXX
