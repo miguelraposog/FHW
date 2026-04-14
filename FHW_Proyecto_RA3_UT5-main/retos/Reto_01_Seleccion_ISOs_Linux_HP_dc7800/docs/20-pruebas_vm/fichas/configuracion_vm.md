@@ -7,12 +7,12 @@
 
 ## Configuración aplicada
 
-- **CPU:**  2
+- **CPU:**  2 núcleos
 - **RAM:**  4096 MB
 - **Disco virtual:**  25 GB
 - **Controlador de almacenamiento:**  SATA AHCI
 - **Red:**  NAT
-- **Audio / vídeo / otros ajustes relevantes:**  Predeterminado / 128 MB video memory
+- **Audio / vídeo / otros ajustes relevantes:**  Audio Predeterminado / 128 MB video memory / arranque en BIOS Legacy
 
 ## Relación con el equipo real
 
