@@ -44,3 +44,5 @@ Frequently Asked Questions - Linux Mint https://linuxmint.com/faq.php
 Linux Mint 22 | Specs, reviews and EoL info - InvGate https://invgate.com/itdb/linux-mint-22
 
 Linux Mint 22.3 "Zena" https://linuxmint.com/edition.php?id=327
+
+Ventoy como instalarlo en un usb para arrancar isos https://www.youtube.com/watch?v=byiG4agU8_g
