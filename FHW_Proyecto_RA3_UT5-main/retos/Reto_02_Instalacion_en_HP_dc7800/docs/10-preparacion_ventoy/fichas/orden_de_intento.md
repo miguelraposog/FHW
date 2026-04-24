@@ -18,13 +18,8 @@ He elegido este orden porque prioriza la eficiencia del hardware y la agilidad o
 Indica cuándo decidiréis pasar de una ISO a la siguiente.  
 
 - No arranca el medio.
-
 - Se bloquea el instalador.
-
 - No detecta el disco.
-
 - Fallo en el particionado.
-
 - La instalación falla repetidamente.
-
 - El sistema no arranca tras instalarse.
